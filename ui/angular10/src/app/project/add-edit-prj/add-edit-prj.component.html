@@ -1,0 +1,43 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">Project Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ProjectName"
+        placeholder="Enter Project Name">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Project Description</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ProjectDescription"
+        placeholder="Enter Project Description">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Date of Start</label>
+    <div class="col-sm-10">
+        <input type="date" lang="english" [(ngModel)]="DateOfStart">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Deadline</label>
+    <div class="col-sm-10">
+        <input type="date"  [(ngModel)]="Deadline">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Status</label>
+    <div class="col-sm-10">
+       <select class="form-control" [(ngModel)]="Status">
+           <option>--Select--</option>
+           <option *ngFor="let prjStatus of StatusList">
+               {{prjStatus.Status}}
+           </option>
+       </select>
+    </div>
+</div>
+
+
+<button (click)="addProject()" *ngIf="prj.ProjectId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateProject()" *ngIf="prj.ProjectId!=0" class="btn btn-primary">
+    Update
+</button>
