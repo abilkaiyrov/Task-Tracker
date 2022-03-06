@@ -22,4 +22,5 @@ Templates:
 Instructions:
 1. In the project folder "Akvelon/App_Data" place DataBase files into "C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA"
 2. Open .sin file using Microsoft Visual Studion and then start project
-3. Open "ui/angular" folder and using cmd terminal type "ng serve --open"
+3. In "ui/angular" we need to install "npm install" if it asks
+4. Open "ui/angular" folder and using cmd terminal type "ng serve --open"
