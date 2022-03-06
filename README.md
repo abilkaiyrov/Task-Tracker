@@ -1,7 +1,7 @@
 ![Design](https://user-images.githubusercontent.com/49922607/156911895-22be2d60-f825-4e7d-976f-aa301ffb6615.png)
 
 Description:
-Microsoft Visual Studio takes Controller component such as ProjectController, TaskController, and StatusController that have been stored into DataBase.
+  Microsoft Visual Studio takes Controller component such as ProjectController, TaskController, and StatusController that have been stored into DataBase.
 While project was still in-progress I used "Postman" to check if API work using "Get" and "Post" methods.
 Using Angular I set 3 components "SharedService" which stored all API and sending/reseving data from WebAPI, "ProjectComponent" and "TaskComponent" with takes information from "SharedService" and displaying them.
 
